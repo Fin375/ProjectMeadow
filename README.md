@@ -2,11 +2,13 @@
 Simulation based on object-oriented programming, dependencies between object classes and the use of java swing for simple animation.
 
 Temat: Symulacja łąki
+
 Łąka jest planszą o zadanym rozmiarze, na której rosną różne rodzaje kwiatów. Rodzaje kwiatów to klasy dziedziczące po klasie ogólnej Kwiaty, zawierającą podstawowe parametry. Klasy dziedziczące zawierają metody określające jak dany rodzaj oddziałuje na pszczoły (np. jedne kwiaty dają 2 razy więcej nektaru niż inne). Po planszy przemieszczają się pszczoły oraz szerszenie, wchodzą one ze sobą w interakcje. Szerszeń jest wrogiem pszczoły i może ją zaatakować - usunąć obiekt. Jednakże jednoczesne spotkanie szerszenia i dwóch pszczół eliminuje obiekt szerszenia. Celem pszczół jest uzyskanie jak największej ilości nektaru z kwiatów znajdujących się na planszy, co pozwala im na zwiększanie swojej populacji. Symulacja zwraca na koniec liczbę pszczół i szerszeni. Może się tak zdarzyć, że na planszy pozostaną same pszczoły, co będzie oznaczało wygraną pszczół.
 
 Język, w którym został wykonany program: Java
 
 Opis symulacji:
+
 Łąka jest kwadratową planszą o zadanej długości boku. Na planszy znajdują się dwa rodzaje kwiatów – każdy rodzaj przechowuje inną ilość nektaru. Dla planszy o polu równym n, każdego rodzaju kwiatów jest pierwiastek z n. Rodzaje kwiatów (lawenda oraz krokus) dziedziczą po klasie ogólnej Kwiat, zawierającej wszelkie zmienne. Symulacja w sposób losowy umieszcza kwiaty na planszy z zastrzeżeniem, że jedno pole może być zajęte przez maksymalnie jeden obiekt.
 Użytkownik na początku działania symulacja zadaje ilość pszczół oraz szerszeni – są to obiekty, które poruszają się po planszy oraz wchodzą w interakcje z innymi obiektami. Program sprawdza poprawność zadanych liczb, poprzez sprawdzenie, czy liczba nie jest ujemna lub zbyt duża do rozmiaru planszy. Program tworzy podaną ilość obiektów typu pszczoła i szerszeń (które dziedziczą po klasie Owad) oraz losowo umieszcza je na planszy, ponownie jedno miejsce na planszy może być zajęte przez maksymalnie jeden z tych dwóch rodzajów obiektów (rozumie się przez to, że na jednym polu planszy jednocześnie może znajdować się obiekt typu kwiat oraz obiekt typu owad, jednak nie mogą się znajdować dwa obiekty typu owad lub dwa obiekty typu kwiat).
 Program na środku planszy umieszcza obiekt typu Ul, którego zadaniem będzie tworzenie nowych pszczół po spełnieniu zadanych kryteriów.
